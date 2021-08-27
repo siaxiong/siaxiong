@@ -1,0 +1,24 @@
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+
+.project-list {
+    /* border: 1px solid black; */
+    margin:  2em 1em;
+}
+
+.project-list > ul > li {
+    list-style: none;
+}
+
+.project-list > ul > li > a {
+    text-decoration: none;
+}

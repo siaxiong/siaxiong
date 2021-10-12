@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      box-sizing: border-box;
+    }
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      background-color: hsl(225, 100%, 94%);
+    }
+
+    .container {
+      margin: 0 auto;
+    }
+
+    .modal.center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      /* z-index: 10; */
+    }
+
+    .modal {
+      display: inline-block;
+      width: 28em;
+      border-radius: 1em;
+      overflow: hidden;
+      background-color: white;
+
+
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 16px;
+      /* font-weight: 500; */
+
+    }
+
+    .modal__graphic > img {
+      /* border-radius: 1em 1em 0 0; */
+
+    }
+
+    .modal__body {
+      text-align: center;
+      width: 18em;
+      margin: 0 auto;
+    }
+
+    .modal__body-texts > h3{
+      font-weight: 900;
+    }
+
+    .modal__price {
+      display: flex;
+      border-radius: 0.5em;
+      background-color: #f2f2f2;
+    }
+
+
+    .modal__price > * {
+      /* border: 1px dashed black; */
+    }
+
+    .modal__icon-music {
+      flex: 1;
+      display: flex;
+      align-self: center;
+      justify-content: center;
+    }
+
+    .modal__price > img {
+      display: inline-block;
+
+    }
+
+    .modal__price-info {
+      flex: 2;
+      text-align: left;
+      line-height: 0.5em;
+    }
+
+    .modal__price-info > p:first-child {
+      font-weight: 500;
+    }
+
+    .modal__price > p {
+      flex: 1;
+      display: flex;
+      align-self: center;
+    }
+
+    .modal__payment {
+      margin: 1.5em 0;
+      /* line-height: 0.5em;  */
+    }
+    .modal__payment > button {
+      width: 100%;
+      color: white;
+      font-weight: 700;
+      padding: 0.8em;
+      border-radius: 0.5em;
+      border: 0;
+      background-color: hsl(245, 75%, 52%);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <img src="/images/pattern-background-desktop.svg" alt="">
+
+  <div class="container">
+
+    <div class="modal center">
+      <div class="modal__graphic">
+        <img src="/images/illustration-hero.svg" alt="">
+      </div>
+      <div class="modal__body">
+        <div class="modal__body-texts">
+          <h3>Order Summary</h3>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on any
+            device anywhere you like!</p>
+        </div>
+        <div class="modal__price">
+          <div class="modal__icon-music">
+          <img src="/images/icon-music.svg" alt="">
+          </div>
+          <div class="modal__price-info">
+            <p>Annual Plan</p>
+            <p>$59.99/year</p>
+          </div>
+          <p><a href="">Change</a></p>
+        </div>
+        <div class="modal__payment">
+          <button>Proceed to Payment</button>
+          <p>Cancel Order</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
